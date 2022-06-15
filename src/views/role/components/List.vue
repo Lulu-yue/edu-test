@@ -144,6 +144,7 @@ export default {
       this.isEdit = true
       this.roleId = role.id
       console.log(this.roleId)
+      console.log(this.isEdit)
     },
     // 删除角色
     handleDelete (role) {

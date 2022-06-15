@@ -37,11 +37,6 @@ export default {
       type: [Number, String]
     }
   },
-  created () {
-    if (this.isEdit) {
-      this.loadRole()
-    }
-  },
   data () {
     return {
       role: {
@@ -49,6 +44,11 @@ export default {
         code: '',
         description: ''
       }
+    }
+  },
+  watch: {
+    isEdit (val) {
+      console.log(val)
     }
   },
   methods: {
